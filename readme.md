@@ -1,15 +1,15 @@
 # UKSH Analysis Workflow
 
-This repository contains a reproducible analysis workflow for PDAC patient data. The project is containerized using Docker, ensuring a consistent environment for running the analysis.
+This repository contains a reproducible analysis workflow for PDAC patient data.
 
 ## Project Structure
-
-- **Dockerfile:** Contains instructions to build the Docker image.
-- **requirements.txt:** Lists all Python dependencies.
-- **main.py:** The main script that executes the workflow.
-- **functions.py:** Helper functions used in the analysis.
 - **Output:** Contains already generated outputs.
-- **main_flow.py** Python notebook cointaing code and pre-generated results. 
+- **Dockerfile:** Contains instructions to build the Docker image.
+- **Methods_Resuls:** Contains a report detailing the methods used and results acheived. 
+- **functions.py:** Helper functions used in the analysis.
+- **main.py:** The main script that executes the workflow.
+- **main_flow.py** Python notebook cointaing code and pre-generated results.
+- **requirements.txt:** Lists all Python dependencies.
 ## How to Run the Analysis
 
 ### 1. Download the Docker Image
@@ -26,6 +26,8 @@ Run the container with the following command:
 ```bash
 docker run --rm -v "$(pwd):/app" mmofty/uksh_analysis_workflow:latest
 ```
+Data sets are already incuded in the docker image. 
+
 
 ### 3. Output
 After executing, output will be generated in terminal and output files will be saved in your current directory.
